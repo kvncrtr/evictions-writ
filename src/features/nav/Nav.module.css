@@ -1,0 +1,108 @@
+.navContainer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 4.25rem;
+   padding: 0 2rem;
+   position: relative;
+}
+
+/* Logo */
+.navLogo {
+   display: flex;
+   align-items: center;
+   gap: 0.81rem;
+   height: 3.5rem;
+   font-size: 1.25rem;
+   font-weight: bold;
+   color: #333;
+}
+
+.navLogoText {
+   font-size: 1.785rem;
+   line-height: 1.785rem;
+}
+
+/* Links */
+.navLinks {
+   display: none;
+   flex-direction: column;
+   position: absolute;
+   top: 100%;
+   right: 1.5rem;
+   background: #fff;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   width: 200px;
+}
+
+.navLinks a {
+   padding: 0.75rem 1rem;
+   color: #333;
+   text-decoration: none;
+   border-bottom: 1px solid #eee;
+   font-size: 1rem;
+   line-height: 1.75rem;
+   font-weight: 400;
+}
+
+.navLinks a:hover {
+   background-color: #E9E3D6;
+}
+
+.navLinks a:last-child {
+   border-bottom: none;
+}
+
+.open {
+  display: flex;
+}
+
+/* Toggle Button */
+.navToggle {
+   font-size: 1.5rem;
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+   .navContainer { 
+      margin: 0 auto;
+      padding: 0 4rem;
+      max-width: 90rem;
+   }
+
+  .navToggle {
+      display: none;
+  }
+
+  .navLinks {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2.5rem;
+      position: static;
+      border: unset;
+      background: unset;
+      width: max-content;
+      height: 100%;
+  }
+
+  .navLinks a {
+      display: flex;
+      align-items: center;
+      border: unset;
+      padding: unset;
+      height: 1.75rem;
+   }
+
+   .navLinks a:hover {
+      background-color: unset;
+      border-bottom: 0.126rem solid #A31E21;
+   }
+
+   .navLinks a:last-child:hover {
+      border-bottom: 0.126rem solid #A31E21;
+   }
+}

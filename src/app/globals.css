@@ -1,42 +1,78 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* 1. Reset and Box-Sizing */
+*,
+*::before,
+*::after {
+   font-family: var(--font-space-grotesk);
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* 2. Remove default button & form styles */
+button,
+input,
+textarea,
+select {
+   font: inherit;
+   color: inherit;
+   background: none;
+   border: none;
+   outline: none;
 }
 
+/* 3. Base HTML elements */
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+   height: 100%;
+   font-family: system-ui, sans-serif;
+   font-size: 16px;
+   background-color: #F3F3F3;
+   color: #1a1a1a;
+   line-height: 1.6;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
+/* 4. Anchor Tags */
 a {
-  color: inherit;
-  text-decoration: none;
+   color: inherit;
+   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* 5. Images */
+img,
+picture,
+video,
+canvas,
+svg {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+/* 6. Lists */
+ul,
+ol {
+   list-style: none;
+}
+
+/* 7. Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: 600;
+   line-height: 1.25;
+}
+
+/* 8. Buttons */
+button {
+   cursor: pointer;
+}
+
+/* 9. Smooth scrolling */
+html {
+   scroll-behavior: smooth;
 }
