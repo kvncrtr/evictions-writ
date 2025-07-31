@@ -36,7 +36,7 @@ export function Hero() {
 
 /*
 
-git add . && git commit -m "feat: build hero section UI" && git push origin feature/hero && git switch main && git pull && git merge feature/hero && git push && git switch feature/hero
+git add . && git commit -m "" && git push origin feature/hero && git switch main && git pull && git merge feature/hero && git push && git switch feature/hero
 
 
 */
